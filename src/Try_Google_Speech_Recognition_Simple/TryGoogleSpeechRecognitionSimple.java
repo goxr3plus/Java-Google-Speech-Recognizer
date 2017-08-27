@@ -1,4 +1,4 @@
-package application;
+package Try_Google_Speech_Recognition_Simple;
 
 import com.darkprograms.speech.microphone.Microphone;
 import com.darkprograms.speech.recognizer.GSpeechDuplex;
@@ -19,7 +19,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import net.sourceforge.javaflacencoder.FLACFileWriter;
 
-public class Main implements GSpeechResponseListener {
+public class TryGoogleSpeechRecognitionSimple implements GSpeechResponseListener {
 	
 	public static void main(String[] args) throws IOException {
 		final Microphone mic = new Microphone(FLACFileWriter.FLAC);
