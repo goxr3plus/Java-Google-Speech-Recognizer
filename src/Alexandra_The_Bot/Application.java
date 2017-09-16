@@ -1,4 +1,4 @@
-package application;
+package Alexandra_The_Bot;
 
 import java.io.IOException;
 
