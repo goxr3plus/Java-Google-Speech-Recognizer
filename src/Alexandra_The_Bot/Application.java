@@ -23,7 +23,7 @@ public class Application {
 	
 	private final TextToSpeech tts = new TextToSpeech();
 	private final Microphone mic = new Microphone(FLACFileWriter.FLAC);
-	private final GSpeechDuplex duplex = new GSpeechDuplex("AIzaSyBspdYHQJIgqEtxepEeL3PgduiAtTtIR9Q");
+	private final GSpeechDuplex duplex = new GSpeechDuplex("AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw");
 	String oldText = "";
 	
 	/**
