@@ -17,7 +17,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="libraries/java-speech-api-1.13.0-SNAPSHOT.jar"/>
-	<classpathentry kind="lib" path="libraries/guava-22.0.jar"/>
 	<classpathentry kind="lib" path="libraries/marytts-builder-5.2-jar-with-dependencies.jar"/>
 	<classpathentry kind="lib" path="libraries/marytts-lang-en-5.2.jar"/>
 	<classpathentry kind="lib" path="libraries/voice-cmu-slt-hsmm-5.2.jar"/>
