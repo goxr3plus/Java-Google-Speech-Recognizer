@@ -1,15 +1,9 @@
 package Try_Google_Speech_Recognition_Simple;
 
-import com.darkprograms.speech.microphone.Microphone;
-import com.darkprograms.speech.recognizer.GSpeechDuplex;
-import com.darkprograms.speech.recognizer.GSpeechResponseListener;
-import com.darkprograms.speech.recognizer.GoogleResponse;
-import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
-import java.io.PrintStream;
-import java.util.List;
+
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -17,13 +11,19 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+
+import com.darkprograms.speech.microphone.Microphone;
+import com.darkprograms.speech.recognizer.GSpeechDuplex;
+import com.darkprograms.speech.recognizer.GSpeechResponseListener;
+import com.darkprograms.speech.recognizer.GoogleResponse;
+
 import net.sourceforge.javaflacencoder.FLACFileWriter;
 
 public class TryGoogleSpeechRecognitionSimple implements GSpeechResponseListener {
 	
 	public static void main(String[] args) throws IOException {
 		final Microphone mic = new Microphone(FLACFileWriter.FLAC);
-		//AIzaSyBspdYHQJIgqEtxepEeL3PgduiAtTtIR9Q
+		//Don't use the below google api key , make your own !!! :) 
 		GSpeechDuplex duplex = new GSpeechDuplex("AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw");
 		
 		duplex.setLanguage("en");
