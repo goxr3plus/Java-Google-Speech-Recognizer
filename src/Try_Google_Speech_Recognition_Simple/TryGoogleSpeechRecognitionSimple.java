@@ -41,18 +41,22 @@ public class TryGoogleSpeechRecognitionSimple implements GSpeechResponseListener
 		
 		record.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent evt) {
-				try {
-					duplex.recognize(mic.getTargetDataLine(), mic.getAudioFormat());
-					record.setEnabled(false);
-					stop.setEnabled(true);
-				} catch (Exception ex) {
-					ex.printStackTrace();
-				}
+				new Thread(() -> {
+					try {
+						duplex.recognize(mic.getTargetDataLine(), mic.getAudioFormat());
+					} catch (Exception ex) {
+						ex.printStackTrace();
+					}
+					
+				}).start();
+				record.setEnabled(false);
+				stop.setEnabled(true);
 			}
 		});
 		stop.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				mic.close();
+				duplex.stopSpeechRecognition();
 				record.setEnabled(true);
 				stop.setEnabled(false);
 			}
