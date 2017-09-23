@@ -2,6 +2,8 @@
 
 Java Speech Recognition based on Google Cloud Services . You can watch youtube tutorials on how to build this project and run it :)
 
+**Brother Project** -> https://github.com/goxr3plus/Java-Google-Text-To-Speech
+
 # Repository of Java Google Speech Api library used for this tutorial
 
 https://github.com/goxr3plus/java-speech-api
