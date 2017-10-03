@@ -72,7 +72,7 @@ public class Application {
 	 * @param text
 	 */
 	public void makeDecision(String output) {
-		output=output.trim();
+		output = output.trim();
 		//System.out.println(output.trim());
 		
 		//We don't want duplicate responses
@@ -89,7 +89,6 @@ public class Application {
 			
 		} else if (output.contains("oh boy") || output.contains("obey")) {//obey
 			speak("Never to you! You are not my addiction.");
-			
 			
 		} else if (output.contains("what is your profession")) {//what is your profession	
 			speak("I am a Psychologist");
@@ -111,7 +110,7 @@ public class Application {
 		} else if (output.contains("like a tetraplegic")) {//like a tetraplegic	
 			speak("It's not of your business");
 			
-		} else if (output.contains("who's your daddy") || output.contains("but I am the boss") ) {//but I'm the boss
+		} else if (output.contains("who's your daddy") || output.contains("but I am the boss")) {//but I'm the boss
 			speak("Fuck off Alex");
 			
 		} else if (output.contains("show me some respect")) {//like a tetraplegic	
@@ -156,7 +155,7 @@ public class Application {
 		new Thread(() -> {
 			try {
 				duplex.recognize(mic.getTargetDataLine(), mic.getAudioFormat());
-			} catch (IOException | LineUnavailableException | InterruptedException e) {
+			} catch (LineUnavailableException | InterruptedException e) {
 				e.printStackTrace();
 			}
 		}).start();
