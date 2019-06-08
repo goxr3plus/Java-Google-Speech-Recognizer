@@ -102,7 +102,7 @@ public class Application {
 		} else if (output.contains("I think you're funny") || output.contains("I think you are funny")) {//I think you are funny		
 			speak("Yeah you too!");
 			
-		} else if (output.contains("let me Smash")) {//I think you are funny		
+		} else if (output.contains("let me smash")) {//I think you are funny		
 			speak("Dont make me horny ");
 			
 		} else if (output.contains("damn girl")) {//damn girl		
@@ -110,7 +110,7 @@ public class Application {
 		} else if (output.contains("like a tetraplegic")) {//like a tetraplegic	
 			speak("It's not of your business");
 			
-		} else if (output.contains("who's your daddy") || output.contains("but I am the boss")) {//but I'm the boss
+		} else if (output.contains("who's your daddy") || output.contains("but I am the boss")|| output.contains("Who's your daddy")) {//but I'm the boss
 			speak("Fuck off Alex");
 			
 		} else if (output.contains("show me some respect")) {//like a tetraplegic	
